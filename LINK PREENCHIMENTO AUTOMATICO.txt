@@ -1,0 +1,16 @@
+FORM DÚVIDA
+===================================================
+SUBISTITUIR
+viewform?usp=pp_url&
+POR:
+formResponse?&submit=Submit?usp=pp_url
+
+https://docs.google.com/forms/d/e/1FAIpQLScEItofat2IG1ybAekBip_kGlE6ynobRPBFOhj8TfvI09hr_g/viewform?usp=pp_url&entry.1818151889=Equipe+01&entry.874436440=NOME&entry.517607907=DUVIDA&entry.180883171=OBS
+
+https://docs.google.com/forms/d/e/1FAIpQLScEItofat2IG1ybAekBip_kGlE6ynobRPBFOhj8TfvI09hr_g/formResponse?&submit=Submit?usp=pp_url
+&entry.1818151889=Equipe+01
+&entry.874436440=NOME
+&entry.517607907=DUVIDA
+&entry.180883171=OBS
+
+
