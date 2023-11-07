@@ -56,7 +56,7 @@ st.markdown(mystyle1, unsafe_allow_html=True)
 option = 'Equipe 01'
 option = st.selectbox(
     'Escolha o número da sua EQUIPE',
-    ('Equipe 01', 'Equipe 02', 'Equipe 03', 'Equipe 04', 'Equipe 05', 'Equipe 06', 'Equipe 07', 'Equipe 08', 'Equipe 09', 'Equipe 10', 'Equipe 11', 'Equipe 12', 'Equipe 13', 'Equipe 14', 'Equipe 15')
+    ('Equipe 01', 'Equipe 02', 'Equipe 03', 'Equipe 04', 'Equipe 05', 'Equipe 06', 'Equipe 07', 'Equipe 08', 'Equipe 09', 'Equipe 10', 'Equipe 11', 'Equipe 12', 'Equipe 13', 'Equipe 14', 'Equipe 15'))
 st.write('Você selecionou:', option)
 
 resp = VerificaOpcao(option)
