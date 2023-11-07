@@ -35,6 +35,12 @@ def VerificaOpcao(opcao):
         return 'Equipe+11','PAINEL - EQUIPE 11'
     elif opcao == 'Equipe 12':
         return 'Equipe+12','PAINEL - EQUIPE 12'
+    elif opcao == 'Equipe 13':
+        return 'Equipe+13','PAINEL - EQUIPE 13'
+    elif opcao == 'Equipe 14':
+        return 'Equipe+14','PAINEL - EQUIPE 14'
+    elif opcao == 'Equipe 15':
+        return 'Equipe+15','PAINEL - EQUIPE 15'
     else:
         return 'ERRO','ERRO'
 
@@ -50,7 +56,7 @@ st.markdown(mystyle1, unsafe_allow_html=True)
 option = 'Equipe 01'
 option = st.selectbox(
     'Escolha o número da sua EQUIPE',
-    ('Equipe 01', 'Equipe 02', 'Equipe 03', 'Equipe 04', 'Equipe 05', 'Equipe 06', 'Equipe 07', 'Equipe 08', 'Equipe 09', 'Equipe 10', 'Equipe 11', 'Equipe 12'))
+    ('Equipe 01', 'Equipe 02', 'Equipe 03', 'Equipe 04', 'Equipe 05', 'Equipe 06', 'Equipe 07', 'Equipe 08', 'Equipe 09', 'Equipe 10', 'Equipe 11', 'Equipe 12', 'Equipe 13', 'Equipe 14', 'Equipe 15')
 st.write('Você selecionou:', option)
 
 resp = VerificaOpcao(option)
