@@ -120,13 +120,13 @@ def exibir():
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
         #st.write(df01D['duvida'])
-        tab1, tab2 = st.tabs(["DÚVIDAS", "Respostas"])
-        with tab1:
+        colD, colR = st.columns((1,1))
+        with colD:
             nD = len(df01D['duvida'])
             for i in range(nD):
                 with st.chat_message("user"):   
                     st.write(df01D['duvida'][i]) 
-        with tab2:        
+        with colR:        
             st.info('Resposta do(a) TUTOR(A):')
             #st.write(df01R['resposta']) 
             nR = len(df01R['resposta'])
