@@ -96,16 +96,20 @@ def exibir():
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
         #st.write(df01D['duvida']
-        with st.chat_message("user"):
-            st.write(df01D['duvida']) 
+        nD = len(df01D['duvida'])
+            for i in range(nD):
+                with st.chat_message("user"):   
+                    st.write(df01D['duvida'][i]) 
                
     elif choice == "Respostas":       
         st.header("Relatório de RESPOSTAS")    
         st.subheader(option)   
         st.info('Resposta do(a) TUTOR(A):')
         #st.write(df01R['resposta']) 
-        with st.chat_message("user"):
-            st.write("df01R['resposta']")
+        nR = len(df01R['resposta'])
+            for j in range(nR):
+                with st.chat_message("user", avatar = "👨‍⚖️"):
+                    st.write(df01R['resposta'][j])
                    
     elif choice == "Dúvidas e Respostas":       
         st.header("Relatório: DÚVIDAS E RESPOSTAS")  
