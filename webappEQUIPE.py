@@ -117,21 +117,21 @@ def exibir():
             st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
             st.success(NregDf01R)
             
-        st.subheader(option)
-        st.warning('Dúvida(s) Enviada(s)')
+        st.subheader(option)        
         #st.write(df01D['duvida'])
         colD, colR = st.columns((1,1))
         with colD:
+            st.warning('Dúvida(s) Enviada(s)')
             nD = len(df01D['duvida'])
             for i in range(nD):
                 with st.chat_message("user"):   
                     st.write(df01D['duvida'][i]) 
         with colR:        
-            st.info('Resposta do(a) TUTOR(A):')
+            st.success('Resposta do(a) TUTOR(A):')
             #st.write(df01R['resposta']) 
             nR = len(df01R['resposta'])
             for j in range(nR):
-                with st.chat_message("user"):
+                with st.chat_message("human"):
                     st.success(df01R['resposta'][j])
 
 exibir()
