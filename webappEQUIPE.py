@@ -95,13 +95,13 @@ def exibir():
         st.header("Relatório de DÚVIDAS")   
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
-        st.write(df01D['duvida']) 
+        st.info(df01D['duvida']) 
                
     elif choice == "Respostas":       
         st.header("Relatório de RESPOSTAS")    
         st.subheader(option)   
         st.info('Resposta do(a) TUTOR(A):')
-        st.write(df01R['resposta'])  
+        st.info(df01R['resposta'])  
                    
     elif choice == "Dúvidas e Respostas":       
         st.header("Relatório: DÚVIDAS E RESPOSTAS")  
@@ -114,9 +114,9 @@ def exibir():
             st.info(NregDf01R)
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
-        st.write(df01D['duvida']) 
+        st.warning(df01D['duvida']) 
         st.info('Resposta do(a) TUTOR(A):')
-        st.write(df01R['resposta']) 
+        st.info(df01R['resposta']) 
 
 exibir()
 with st.form("FormularioDÚVIDAS", clear_on_submit=True):
