@@ -116,6 +116,7 @@ def exibir():
         with colDR2:
             st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
             st.info(NregDf01R)
+            
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
         #st.write(df01D['duvida']) 
