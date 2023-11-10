@@ -124,6 +124,7 @@ def exibir():
         for i in range(nD):
             with st.chat_message("user"):   
                 st.write(df01D['duvida'][i]) 
+        st.write("")
         st.info('Resposta do(a) TUTOR(A):')
         #st.write(df01R['resposta']) 
         nR = len(df01R['resposta'])
