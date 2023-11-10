@@ -95,7 +95,9 @@ def exibir():
         st.header("Relatório de DÚVIDAS")   
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
-        st.dataframe(df01D['duvida']) 
+        #st.write(df01D['duvida']
+        with st.chat_message("user"):
+            st.write(df01D['duvida']) 
                
     elif choice == "Respostas":       
         st.header("Relatório de RESPOSTAS")    
@@ -117,7 +119,7 @@ def exibir():
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
         #st.write(df01D['duvida']) 
-        with st.chat_message("user"):
+        with st.container():   
             st.write(df01D['duvida']) 
         st.info('Resposta do(a) TUTOR(A):')
         #st.write(df01R['resposta']) 
