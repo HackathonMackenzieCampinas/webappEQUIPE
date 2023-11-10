@@ -131,8 +131,8 @@ def exibir():
             #st.write(df01R['resposta']) 
             nR = len(df01R['resposta'])
             for j in range(nR):
-                with st.chat_message("human"):
-                    st.success(df01R['resposta'][j])
+                with st.chat_message("ai"):
+                    st.write(df01R['resposta'][j])
 
 exibir()
 with st.form("FormularioDÚVIDAS", clear_on_submit=True):
