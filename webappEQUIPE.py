@@ -119,9 +119,11 @@ def exibir():
             
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
-        #st.write(df01D['duvida']) 
-        with st.container():   
-            st.write(df01D['duvida']) 
+        #st.write(df01D['duvida'])
+        n = len(df01D['duvida'])
+        for i in range(n):
+            with st.chat_message("user"):   
+                st.write(df01D['duvida'][i]) 
         st.info('Resposta do(a) TUTOR(A):')
         #st.write(df01R['resposta']) 
         with st.chat_message("user"):
