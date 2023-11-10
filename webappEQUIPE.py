@@ -132,7 +132,7 @@ def exibir():
             nR = len(df01R['resposta'])
             for j in range(nR):
                 with st.chat_message("user"):
-                st.success(df01R['resposta'][j])
+                    st.success(df01R['resposta'][j])
 
 exibir()
 with st.form("FormularioDÚVIDAS", clear_on_submit=True):
