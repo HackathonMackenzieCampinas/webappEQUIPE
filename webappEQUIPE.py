@@ -114,7 +114,7 @@ def exibir():
             st.write("Nº TOTAL de Dúvidas (DESTA EQUIPE):")
             st.warning(NregDf01D)
         with colDR2:
-            st.success("Nº TOTAL de dúvidas RESPONDIDAS:")
+            st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
             st.success(NregDf01R)
             
         st.subheader(option)
