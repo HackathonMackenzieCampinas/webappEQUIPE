@@ -57,7 +57,7 @@ option = 'Equipe 01'
 option = st.selectbox(
     'Escolha o número da sua EQUIPE',
     ('Equipe 01', 'Equipe 02', 'Equipe 03', 'Equipe 04', 'Equipe 05', 'Equipe 06', 'Equipe 07', 'Equipe 08', 'Equipe 09', 'Equipe 10', 'Equipe 11', 'Equipe 12', 'Equipe 13', 'Equipe 14', 'Equipe 15'))
-st.write('Você selecionou:', option)
+st.info('Você selecionou:', option)
 
 resp = VerificaOpcao(option)
 EQUIPE = resp[0]
@@ -95,32 +95,32 @@ def exibir():
         st.header("Relatório de DÚVIDAS")   
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
-        st.write(df01D['duvida']) 
+        st.info(df01D['duvida']) 
                
     elif choice == "Respostas":       
         st.header("Relatório de RESPOSTAS")    
         st.subheader(option)   
         st.info('Resposta do(a) TUTOR(A):')
-        st.write(df01R['resposta'])  
+        st.info(df01R['resposta'])  
                    
     elif choice == "Dúvidas e Respostas":       
         st.header("Relatório: DÚVIDAS E RESPOSTAS")  
         colDR1, colDR2 = st.columns((1,1))
         with colDR1:
-            st.write("Nº TOTAL de Dúvidas (DESTA EQUIPE):")
+            st.info("Nº TOTAL de Dúvidas (DESTA EQUIPE):")
             st.warning(NregDf01D)
         with colDR2:
-            st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+            st.info("Nº TOTAL de dúvidas RESPONDIDAS:")
             st.info(NregDf01R)
         st.subheader(option)
         st.warning('Dúvida(s) Enviada(s)')
-        st.write(df01D['duvida']) 
+        st.info(df01D['duvida']) 
         st.info('Resposta do(a) TUTOR(A):')
-        st.write(df01R['resposta']) 
+        st.info(df01R['resposta']) 
 
 exibir()
 with st.form("FormularioDÚVIDAS", clear_on_submit=True):
-    st.write("Formulário para envio de dúvidas da " + option)
+    st.info("Formulário para envio de dúvidas da " + option)
     NOME = st.text_input('SEU NOME:')
     DUVIDA = st.text_input('SUA DÚVIDA:')
     OBS = st.text_input('DIGITE OBSERVAÇÃO ADICIONAL:')
