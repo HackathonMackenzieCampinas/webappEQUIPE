@@ -131,7 +131,7 @@ def exibir():
             #st.write(df01R['resposta']) 
             nR = len(df01R['resposta'])
             for j in range(nR):
-                with st.chat_message("user", avatar = ""🧑‍💻"):
+                with st.chat_message("user", avatar = "🧑‍💻"):
                     st.write(df01R['resposta'][j])
 
 exibir()
