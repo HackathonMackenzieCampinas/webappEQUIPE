@@ -44,7 +44,7 @@ def VerificaOpcao(opcao):
     else:
         return 'ERRO','ERRO'
 
-image01 = Image.open('ImagemLateral.jpg')
+image01 = Image.open('ImagemLateral2.jpg')
 st.sidebar.image(image01, width=300, caption='2º Hackathon Mackenzie Campinas - 2023') 
 
 
